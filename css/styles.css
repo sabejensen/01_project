@@ -320,6 +320,9 @@ body {
   font-size: 16px;
   font-family: Verdana, sans-serif; }
 
+#footer-wrapper, main h1 {
+  padding: 0 2% 0 2%; }
+
 /*----------- COLUMNS --------------*/
 .flexed {
   display: flex;
@@ -435,6 +438,22 @@ nav ul li:hover {
 nav ul li.active {
   background-color: #034353;
   color: #f0f0f0; }
+
+.parent {
+  position: relative;
+  display: inline-block; }
+
+.parent ul {
+  width: 100%;
+  z-index: 1; }
+
+.parent ul li {
+  background-color: #05637A;
+  width: 102.1%;
+  margin-left: -2.1%; }
+
+.parent:hover .parent ul {
+  display: block; }
 
 .search {
   float: right;
@@ -826,6 +845,26 @@ footer i:hover {
 
   nav ul li {
     width: 15%; }
+
+  #nav-menu {
+    height: auto; }
+
+  nav button {
+    display: none; }
+
+  .parent ul {
+    position: absolute;
+    display: none; }
+
+  .parent ul li {
+    display: block;
+    float: none;
+    width: 150px; }
+
+  #nav-menu li:hover ul {
+    position: absolute;
+    display: block;
+    float: left; }
 
   .blog-item {
     max-width: 40%;

@@ -10,6 +10,9 @@ body {
     font-size: 16px;
     font-family: Verdana, sans-serif;
 }
+#footer-wrapper, main h1 {
+    padding: 0 2% 0 2%;
+}
 
 /*----------- COLUMNS --------------*/
 .flexed {display: flex; flex-wrap: wrap;}
@@ -72,6 +75,22 @@ nav ul li:hover {
 nav ul li.active {
     background-color: darken($primaryColor, 8%);
     color: $secondaryColor;
+}
+.parent {
+    position: relative;
+    display: inline-block;
+}
+.parent ul {
+    width: 100%;
+    z-index: 1;
+}
+.parent ul li {
+    background-color: $primaryColor;
+    width: 102.1%;
+    margin-left: -2.1%;
+}
+.parent:hover .parent ul {
+    display: block;
 }
 .search {
     float: right;
