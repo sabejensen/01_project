@@ -30,7 +30,7 @@
             srcset="images/logo-1.png 1x, images/logo-2.png 2x, images/logo-3.png 3x"
         >
     </figure>
-    <h1><i>1-800-555-1234</i>&nbsp;&nbsp;</h1>
+    <h1><i><a style='text-decoration: none; color: #000;' href='tel:18005551234'>1-800-555-1234</a></i>&nbsp;&nbsp;</h1>
 </header>
     
     
@@ -38,7 +38,9 @@
 <div class="wrapper" id="nav-wrapper">
     <nav class="clearfix">
         <button onclick="toggleMenu()">&Congruent;</button>
-        <input class="search" type="text" placeholder="search..">
+        <div class='search-wrap'><input class="search" type="text" placeholder="search..">
+            <div class='search-button'><i class="fas fa-search"></i></div>
+        </div>
         <ul id="nav-menu" class="column hide" >
             <li class="active"><a href="/index.html">Home</a></li>
             <li><a href="#">Cruises</a></li>
@@ -134,7 +136,7 @@
                 <p class="low-line-height">Lexington, VA 24450</p>
                 <br>
             <h2 class="low-line-height">Phone</h2>
-                <p>1-800-555-1234</p><br>
+                <p><a style='text-decoration: none; color: #fff;' href='tel:18005551234'>1-800-555-1234</a></p><br>
             <h2 class="low-line-height">Hours of Operation:</h2>
                 <p>Monday - Friday 9am - 4pm</p>
         </div>

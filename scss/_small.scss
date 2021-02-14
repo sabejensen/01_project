@@ -93,10 +93,27 @@ nav ul li.active {
     display: block;
 }
 .search {
+    background-color: $secondaryColor;
+}
+.search-wrap {
+    display: flex;
     float: right;
     margin-right: 5px;
     height: 40.5px;
+}
+.search-button {
     background-color: $secondaryColor;
+    text-align: center;
+    border: 1px solid black;
+    height: 39px;
+    width: 39px;
+    margin-top: 1px;
+    margin-left: -2px;
+    padding-top: 8.6px;
+    color: gray;
+}
+.search-button:active {
+    background-color: #aaa;
 }
 nav button {
     background-color: $primaryColor;
